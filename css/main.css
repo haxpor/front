@@ -32,7 +32,12 @@ body {
 
 .haxpor-img, .abzico-img {
 	border-radius: 10px;
-	margin-left: 10px;
+  margin: 20px;
+  height: auto;
+  max-width: 80%;
+  width: 350px;
+  position: relative;
+  top: -55px;
 }
 
 .footer {
