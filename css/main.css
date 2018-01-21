@@ -38,6 +38,7 @@ body {
   width: 350px;
   position: relative;
   top: -55px;
+  box-shadow: 7px 7px 20px rgb(150, 150, 150);
 }
 
 .footer {
