@@ -69,7 +69,7 @@ function isScrolledIntoView(elemName, fullyInView) {
 function logic() {
   // hook up button to scroll the page to relevant section
   document.getElementById("blog-button").addEventListener('click', function() {
-    smoothScroll('blog-section');
+    window.location = "https://blog.wasin.io/";
   });
   document.getElementById("games-button").addEventListener('click', function() {
     smoothScroll('games-section');
