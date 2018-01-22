@@ -1,8 +1,6 @@
-
-html, body { height: 100%; }
-
-a {
-  color: transparent;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -13,11 +11,57 @@ body {
   color: #111;
   background-color: #eee;
   -webkit-text-size-adjust: 100%;
-  overflow: hidden;
 }
 
-.wrapper {
-	height: 100%;
+a {
+  color: transparent;
+}
+
+.header {
+  border: 1px solid black;
+  padding: 12px;
+  background-color: black;
+  text-align: center;
+  box-shadow: 0px 2px 3px rgb(150, 150, 150);
+}
+.header span.button {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.header span.button:hover {
+  color: black;
+  background-color: white;
+}
+.header span.separator {
+  border: none;
+  border-left: 2px double white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+div.introduction-section {
+  position: relative;
+}
+div.introduction-section canvas.webgl-canvas {
+  margin: 0px;
+  padding: 0px;
+}
+div.introduction-section div#overlay {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: block;
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+}
+
+.paths-section {
+	height: 600px;
 	display: -webkit-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -36,25 +80,38 @@ body {
   height: auto;
   max-width: 80%;
   width: 350px;
-  position: relative;
-  top: -55px;
   box-shadow: 7px 7px 20px rgb(150, 150, 150);
+}
+
+.anim-comeinleft {
+  -webkit-animation-name: comeinLeft;
+  -webkit-animation-duration: 1.5s;
+  -webkit-fill-mode: forwards;
+  animation-name: comeinLeft;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.anim-comeinright {
+  -webkit-animation-name: comeinRight;
+  -webkit-animation-duration: 1.5s;
+  -webkit-fill-mode: forwards;
+  animation-name: comeinRight;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .footer {
 	width: 100%;
 	height: 110px;
-  position: fixed;
   left: 50%;
-  transform: translate(-50%, -100%);
   background-color: rgba(0,0,0,0.9);
   color: white;
 }
 
 .footer-text {
 	margin-top: 10px;
-	margin-right: 10px;
-	text-align: right;
+  text-align: right;
+  padding: 10px;
 }
 
 .code {
@@ -69,4 +126,52 @@ body {
 	width: 32px;
 	height: 32px;
 	vertical-align: middle;
+}
+
+@-webkit-keyframes comeinLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+   }
+   100% {
+     opacity: 1;
+     -webkit-transform: translate(0);
+   }
+}
+@keyframes comeinLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+   }
+   100% {
+     opacity: 1;
+     transform: translate(0);
+   }
+}
+
+@-webkit-keyframes comeinRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+   }
+   100% {
+     opacity: 1;
+     -webkit-transform: translate(0);
+   }
+}
+@keyframes comeinRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+   }
+   100% {
+     opacity: 1;
+     transform: translate(0);
+   }
+}
+
+@media screen and (max-width:480px) {
+  .paths-section {
+    height: 400px;
+  }
 }
