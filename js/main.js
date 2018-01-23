@@ -83,21 +83,6 @@ function logic() {
   document.getElementById("tech-button").addEventListener('click', function() {
     smoothScroll('tech-section');
   });
-
-  window.onscroll = function(e) {
-    if (isScrolledIntoView('haxpor-img-elem')) {
-      var elem1 = document.getElementById('haxpor-img-elem');
-      if (elem1.className.search("anim-comeinleft") == -1) {
-        elem1.className += " anim-comeinleft";
-      }
-    }
-    if (isScrolledIntoView('abzico-img-elem')) {
-      var elem1 = document.getElementById('abzico-img-elem');
-      if (elem1.className.search("anim-comeinright") == -1) {
-        elem1.className += " anim-comeinright";
-      }
-    }
-  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
