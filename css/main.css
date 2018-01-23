@@ -146,15 +146,6 @@ div.introduction-section div#overlay {
 .wrapper-section > h1 {
   margin: 15px;
 }
-.wrapper-section hr {
-  width:70%;
-  margin: auto;
-  margin-top: 50px;
-  border: 0;
-  height: 0;
-  border-top:1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
 
 .section-separator {
   margin: 80px;
