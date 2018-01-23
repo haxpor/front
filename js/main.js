@@ -66,6 +66,12 @@ function isScrolledIntoView(elemName, fullyInView) {
   }
 }
 
+function delayGotoProductURL(url) {
+  setTimeout(function() {
+    window.location = url;
+  }, 500);
+}
+
 function logic() {
   // hook up button to scroll the page to relevant section
   document.getElementById("blog-button").addEventListener('click', function() {
