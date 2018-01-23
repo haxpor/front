@@ -201,18 +201,23 @@ div.introduction-section div#overlay {
   font-size: 20px;
 }
 .overlay::before {
+  display: block;
   position: relative;
   content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display: none;
   z-index: 0;
   background-color: rgba(0,0,0,0.5);
+  -moz-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  opacity: 0;
 }
 .overlay:hover::before, .overlay:active::before, .overlay:focus::before {
-  display: block;
+  opacity: 1;
 }
 .overlay:hover .project-meta, .overlay:active .project-meta, .overlay:focus .project-meta {
   display: block;
