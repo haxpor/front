@@ -76,8 +76,8 @@ div.introduction-section div#overlay {
 }
 
 .paths-section {
-	height: 400px;
-	display: -webkit-flexbox;
+  height: 350px;
+  display: -webkit-flexbox;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -90,11 +90,11 @@ div.introduction-section div#overlay {
 }
 
 .haxpor-img, .abzico-img {
-	border-radius: 10px;
+  border-radius: 10px;
   margin: 20px;
   height: auto;
   max-width: 80%;
-  width: 350px;
+  width: 250px;
   box-shadow: 7px 7px 20px rgb(150, 150, 150);
 }
 
@@ -276,7 +276,7 @@ div.introduction-section div#overlay {
 
 @media screen and (min-width:480px) {
   .paths-section {
-    height: 600px;
+    height: 450px;
   }
 }
 
