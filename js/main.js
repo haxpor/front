@@ -75,7 +75,7 @@ function delayGotoProductURL(url) {
 function logic() {
   // hook up button to scroll the page to relevant section
   document.getElementById("blog-button").addEventListener('click', function() {
-    window.location = "https://blog.wasin.io/";
+    window.location = "https://wasin.io/blog";
   });
   document.getElementById("games-button").addEventListener('click', function() {
     smoothScroll('games-section');
